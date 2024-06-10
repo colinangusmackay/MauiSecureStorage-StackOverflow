@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiSecureStorage.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Set secure storage value"
+                HorizontalOptions="Center"
+                Style="{StaticResource Headline}"/>
+
+            <Entry x:Name="NewValue" HorizontalOptions="Fill"/>
+            
+            <Button
+                x:Name="SetSecureStorage"
+                Text="Set Value" 
+                Clicked="SetSecureStorage_OnClicked"
+                HorizontalOptions="Fill" />
+            
+            <Label
+                Text="* * *"
+                HorizontalOptions="Center"
+                Style="{StaticResource Headline}"/>
+            
+            <Button
+                x:Name="GetSecureStorage"
+                Text="Get Value" 
+                Clicked="GetSecureStorage_OnClicked"
+                HorizontalOptions="Fill" />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
